@@ -1,0 +1,6 @@
+Exists es como hacer una igualación pero sin poner la parte izquierda de esa igualdad
+Si existe algún registro que cumpla la condición, muestra los resultados (que cumplan esa condición claro)
+Conque haya uno que exista ya entraría como condición válida
+Si no existe ningún registro que cumpla la condición, no sacaría ningún dato
+
+

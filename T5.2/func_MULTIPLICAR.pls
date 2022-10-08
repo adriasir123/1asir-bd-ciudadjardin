@@ -1,0 +1,10 @@
+CREATE OR REPLACE FUNCTION MULTIPLICAR 
+(
+  N1 IN NUMBER 
+, N2 IN NUMBER 
+) RETURN NUMBER AS 
+    resultado number;
+BEGIN
+    resultado := n1*n2;
+  RETURN resultado;
+END MULTIPLICAR;

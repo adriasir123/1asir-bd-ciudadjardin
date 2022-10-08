@@ -1,0 +1,22 @@
+ENUNCIADOS E-R
+
+Los clientes, caracterizados por tener un DNI, nombre y domicilio, hacen pedidos. Cada pedido tiene un número de pedido diferente, y corresponde a un único cliente. No hay clientes que no hayan hecho pedidos. Cada cliente puede hacer más de un pedido
+
+Los empleados caracterizados por su DNI trabajan en departamentos. Cada departamento tiene un número diferente. En cada departamento trabaja como mínimo un empleado, aunque puede haber más.
+Todos los empleados están asignados a algún departamento, incluso hay empleados que pertenecen a varios departamentos
+
+Los futbolistas juegan partidos, y cada partido tiene un id y una fecha. Cada futbolista, se caracteriza por su DNI, y todos los futbolistas juegan en al menos un partido.
+
+Los clientes compran trajes. Cada cliente tiene un DNI. Un cliente, para hacerlo, debe comprar el menos un traje. Es posible que compre más trajes. Un tipo de traje es posible que se venda a varios clientes, pero también que no lo compre nadie. Interesa registrar la fecha de compra, y el número de unidades adquiridas.
+
+Algunas personas tienen coche, hay personas que no tienen, y otras tienen más de uno. Cada coche pertenece a una sola persona, interesa conocer el color del coche
+
+
+Algunas personas compran coches, hay personas que no lo llegan a comprar nunca, otras compran más de uno. Cada coche pertenece en un momento dado a una sola persona, pero puede ir pasando de dueño a dueño. Interesa saber el color del coche
++
+Interesa saber la fecha de adquisión del coche
+
+Hay coches que se guardan en cocheras. No es posible que un coche se guarde en más de una cochera, aunque hay coches que no se guardan en ninguna. Cada cochera tiene asignado como máximo un solo coche, aunque hay cocheras sin coche asignado
+
+Cada alumno tiene asignado un único ordenador, un mismo ordenador se puede compartir entre varios alumnos, aunque hay ordenadores que no se han asignado a ningún alumno. Cada ordenador está en un aula. En un aula hay varios ordenadores, y no hay aulas sin ordenador.
+

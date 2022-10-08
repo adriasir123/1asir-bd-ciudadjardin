@@ -1,0 +1,6 @@
+CREATE OR REPLACE PROCEDURE HOLA_MUNDO AS 
+    var1 varchar(10);
+BEGIN
+    var1 := 
+      DBMS_OUTPUT.PUT_LINE('Hola mundo');
+END HOLA_MUNDO;

@@ -1,0 +1,68 @@
+todos los comandos terminarlos con ;
+connect system (logearnos con un usuario en la base de datos)
+create user prueba identified by prueba default tablespace users;
+
+Tablespace es como el lugar donde guardamos
+
+grant connect prueba (dar permisos de conexión a la base de datos a prueba)
+commit (guardar cambios que hagamos)
+
+' ' = case-sensitive
+
+like 7% (%= lo que sea) lo mismo que *
+_ (1 carácter) lo mismo que ?
+
+22/1/19
+grant dba to pinacotecas (permisos de administración)
+
+25/1/19
+Sólo está permitido un registro de restricción de clave primaria
+
+29/1/19
+ADD CONSTRAINT nombre_constraint (todo lo que sigue)
+
+DROP CONSTRAINT nombre_constraint (todo lo que sigue) (borra constraint físicamente, borra la línea escrita que dice constraint)
+
+DISABLE CONSTRAINT nombre (deshabilitar, no borra el registro)
+
+
+
+[PARA EJERCICIOS PRÁCTICA GBD)
+ALTER TABLE NAVES ADD CONSTRAINT ck_NTripulantes CHECK (ntripulantes BETWEEN 1 AND 500);
+ALTER TABLE PLANETAS ADD CONSTRAINT ck_galaxia CHECK (galaxia IN ('via lactea', 'Andromeda', 'Sombrero'));
+
+30/1/19
+ADD CONSTRAINT nombre_constraint CHECK (nombre_columna IS NOT NULL);
+
+5/2/19
+En caso de 1:1 y 1:N, la clave que se pasa al otro lado, en ese lado, es foránea pero no primaria.
+Cuando tenemos un caso de N:M, las claves primarias que absorbe, siguen siendo primarias y además foráneas en la nueva tabla N:M creada.
+
+6/2/19
+insert (introducción de datos)
+HR
+SCOTT
+
+(con system)
+alter user hr account unlock;
+alter user hr identified by "hr";
+
+(acceso en caso de que se bloquee usuario system)
+sqlplus /nolog
+connect /as sysdba
+alter user system identified by "(contraseña)";
+
+En oracle tenemos disponible una base de datos de ejemplo, con su usuario y tablespace asociado obviamente. Se llama hr, y accedemos conectándonos con el usuario HR
+
+
+13/2/19
+select concat (first_name, (concat (' ',last_name))) "Nombre Completo" from employees;
+
+19/2/19
+LIKE = comparación cadenas con patrones(funciona con el tipo de cadena varchar, char...) (%S%, por ejemplo, etc...)
+= comparación cadenas sin patrones
+
+
+
+
+

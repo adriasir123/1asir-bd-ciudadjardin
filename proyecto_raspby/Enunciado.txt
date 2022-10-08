@@ -1,0 +1,17 @@
+Realiza el diagrama entidad/relación y su posterior paso a relacional.
+
+Utiliza mysql workbench para representar el esquema.
+
+Enunciado:
+
+Se quiere diseñar un sistema para la medición de las variables meteorológicas y de calidad del aire en el instituto Ciudad Jardín, nos proponen las siguientes premisas:
+
+Existen distintas estaciones, de las cuales queremos almacenar un código interno, marca, modelo, la ip, modo de conexión (WIFI, CABLEADO y ubicación).
+
+Además, registraremos los distintos sensores, de los almacenaremos un código, el modelo y las variables meteorológicas que puede recoger.
+
+De las variables meteorológicas almacenaremos un código y la descripción. Un sensor debe poder recoger al menos una variable meteorológica, existe la posibilidad de almacenar variables meteorológicas sin tener un sensor que sea capaz de recogerla.
+
+Cada una de las estaciones meteorológicas pueden tener conectados o no uno o varios sensores, los sensores podrán estar también conectados a una o varias, en distintas fechas.
+
+En cuanto a las medidas que pueden tomarse, debe de almacenarse la fecha y hora de la medida, el tipo de medida que se ha tomado, el sensor que la ha obtenido y el valor de la medida. 
